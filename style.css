@@ -1,0 +1,20 @@
+/*.bg-info{
+    background-color: red !important;
+}
+evabeo dewa jay but eta recommanded na */
+/*contrl+f mere code search kora jay*/
+.panda-bg-info{
+    background-color: #fceafc;
+}
+/* override korte chaile nijeshoo class baniye erpr override krbo*/
+/*gradient ta rakhleo hbe na rakhleo hbe */
+.catagories img{
+    width: 100px;
+}
+.panda-btn-buy-now{
+    background-color: #ff4b92;
+    color: white;
+    border-radius: 8px;
+    padding: 9px 25px;
+    border: none;
+}

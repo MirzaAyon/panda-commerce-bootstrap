@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Commerce</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom styles-->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <!--fixed top dewar karon shoe the click korle jeno shoe te chole jay-->
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,13 +28,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
 
@@ -46,7 +49,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active  ">
-                        <div class="row bg-primary bg-gradient d-flex align-items-center p-5 ">
+                        <div class="row panda-bg-info bg-gradient d-flex align-items-center p-5 ">
                             <!-- dot gula dewa jabe na-->
                             <div class="col-lg-7">
                                 <h1>Cool Dude Headphone</h1>
@@ -63,7 +66,7 @@
 
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-primary bg-gradient d-flex align-items-center p-5 ">
+                        <div class="row panda-bg-info bg-gradient  d-flex align-items-center p-5 ">
                             <!-- dot gula dewa jabe na-->
                             <div class="col-lg-7">
                                 <h1>Mega LCD TV For Sports</h1>
@@ -82,7 +85,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-primary bg-gradient d-flex align-items-center p-5 ">
+                        <div class="row panda-bg-info bg-gradient  d-flex align-items-center p-5 ">
                             <!-- dot gula dewa jabe na-->
                             <div class="col-lg-7">
                                 <h1>X-Box for your living room</h1>
@@ -113,7 +116,7 @@
     </header>
     <main>
         <!-- Catagories-->
-        <section class="container my-5">
+        <section class="container my-5 catagories">
 
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 col-12">
@@ -140,7 +143,7 @@
 
         </section>
         <!-- shoe section-->
-        <section class="container">
+        <section class="container" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
                 <div class="col">
@@ -152,7 +155,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -165,7 +168,7 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -178,15 +181,14 @@
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.</p>
                         </div>
-                        <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                        <div class="m-3"><button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Bagpack-->
-        <section class="container mt-5">
+        <section class="container my-5" id="backpack">
             <h2>Bagpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
                 <div class="col">
@@ -198,7 +200,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -211,7 +213,7 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -225,14 +227,29 @@
                                 height action.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- subscribe section-->
+        <section style="height: 300px;" id="subscribe"
+            class="container bg-info d-flex justify-content-center align-items-center rounded-3">
+            <!-- direct d-flex justify-content-centerr marle shob gula pasha pashi chole jabe tai purata ke ekta div er modhe nite hbe -->
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input type="text" class="form-control" placeholder="Your Email">
+                <br>
+                <button class="panda-btn-buy-now">SUBMIT</button>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="mt-5 text-center">
+        <!-- css e text-align-center and bootstrap e text-center-->
+        <p><small>©2021. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
